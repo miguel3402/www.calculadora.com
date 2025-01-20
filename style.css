@@ -1,0 +1,134 @@
+/* Resetando o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o fundo */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #cce7ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo para o container de login */
+.container {
+    text-align: center;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o formulário de login */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="email"] {
+    color: #a1a1a1;
+}
+
+input[type="password"] {
+    color: #555;
+}
+
+/* Estilo do botão "Entrar" (semelhante ao botão do Instagram) */
+.btn-enter {
+    width: 100%;
+    padding: 12px;
+    background-color: #3897f0; /* Azul do Instagram */
+    color: white; /* Texto branco */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-enter:hover {
+    background-color: #3a8df5; /* Cor mais escura no hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
+
+/* Estilo da calculadora */
+.calculator-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    background-color: #f4f4f4;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d0d0d0;
+}
+
+.operator {
+    background-color: #f1f1f1;
+}
+
+.operator:hover {
+    background-color: #e0e0e0;
+}
+
+.equals {
+    grid-column: span 2;
+    background-color: #28a745;
+    color: white;
+}
+
+.equals:hover {
+    background-color: #218838;
+}

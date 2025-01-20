@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Caixa de Login -->
+        <div class="login-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="button" id="loginBtn" class="btn-enter">Entrar</button> <!-- Botão de login -->
+            </form>
+        </div>
+
+        <!-- Calculadora (oculta inicialmente) -->
+        <div class="calculator-container" id="calculatorContainer">
+            <div class="calculator">
+                <div id="display" class="display">0</div>
+                <div class="buttons">
+                    <button class="btn" onclick="appendToDisplay('7')">7</button>
+                    <button class="btn" onclick="appendToDisplay('8')">8</button>
+                    <button class="btn" onclick="appendToDisplay('9')">9</button>
+                    <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+                    <button class="btn" onclick="appendToDisplay('4')">4</button>
+                    <button class="btn" onclick="appendToDisplay('5')">5</button>
+                    <button class="btn" onclick="appendToDisplay('6')">6</button>
+                    <button class="btn operator" onclick="appendToDisplay('*')">*</button>
+                    <button class="btn" onclick="appendToDisplay('1')">1</button>
+                    <button class="btn" onclick="appendToDisplay('2')">2</button>
+                    <button class="btn" onclick="appendToDisplay('3')">3</button>
+                    <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+                    <button class="btn" onclick="appendToDisplay('0')">0</button>
+                    <button class="btn" onclick="clearDisplay()">C</button>
+                    <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+                    <button class="btn equals" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
